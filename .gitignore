@@ -10,7 +10,7 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 */[Mm]odels/*
-!/Assets/[Mm]odels/.gitkeep
+!*/[Mm]odels/.gitkeep
 /Assets/[Ii]cons/
 
 # MemoryCaptures can get excessive in size.
