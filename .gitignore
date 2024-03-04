@@ -10,8 +10,9 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 */[Mm]odels/*
-!*/[Mm]odels/.md
-/Assets/[Ii]cons/
+!*/[Mm]odels/.gitkeep
+*/[Ii]cons/*
+!*/[Ii]cons/.gitkeep
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
