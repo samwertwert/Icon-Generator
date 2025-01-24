@@ -25,7 +25,15 @@ public class IconGenerator : MonoBehaviour
     };
     private void Awake()
     {
-        cam = Camera.main;
+        cam = Camera.main; 
+        
+        for (int i = 0; i < sceneObjects.Count; i++)
+        {
+            GameObject obj = sceneObjects[i];
+
+            obj.SetActive(false);
+
+        }
     }
 
     [ContextMenu("Screenshot")]
@@ -40,13 +48,13 @@ public class IconGenerator : MonoBehaviour
         {
             GameObject obj = sceneObjects[i];
 
-            obj.gameObject.SetActive(true);
+            obj.SetActive(true);
             yield return null;
 
             TakeShot($"{Application.dataPath}/{pathFolder}/{obj.name}_Icon.png");
 
             yield return null;
-            obj.gameObject.SetActive(false);
+            obj.SetActive(false);
 
             yield return null;
         }
